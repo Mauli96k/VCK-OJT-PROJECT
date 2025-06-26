@@ -8,6 +8,8 @@ import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ChatbotComponent from "./componets/Chatbot/chatbotComponent";
+
 
 
 
@@ -29,6 +31,8 @@ const App = () =>{
            
 
         </Routes>
+      < ChatbotComponent/>
+
       </div>
 
       
