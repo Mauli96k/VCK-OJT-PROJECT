@@ -1,5 +1,7 @@
 // src/hooks/useOnlineStatus.js
-import { useState, useEffect } from 'react';
+
+import { useState } from "react";
+
 /**
  * Custom React Hook to track the online/offline status of the browser.
  * @returns {boolean} - True if online, false if offline.
