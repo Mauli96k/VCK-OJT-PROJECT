@@ -1,3 +1,4 @@
+/* Main Chat Window */
 .chat-window {
   background-color: white;
   border-radius: 10px;
@@ -10,6 +11,7 @@
   flex-direction: column; /* Stack children vertically */
   overflow: hidden; /* Hide any overflow from rounded corners */
 }
+
 /* Chat Header/Title Bar */
 .chat-header {
   background-color: #007BFF;
@@ -26,6 +28,7 @@
   font-size: 1.2em;
   font-weight: bold;
 }
+
 .chat-messages {
   flex-grow: 1; /* Allow this section to grow and take all available space */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
@@ -40,12 +43,14 @@
   font-size: 1.5em;
   /* Larger icon */
 }
+
 .chat-header h2 {
   margin: 0;
   /* Remove default margin */
   font-size: 1.2em;
   /* Ensure title size is appropriate */
 }
+
 /* Message Row (for aligning avatar and bubble) */
 .message-row {
   display: flex;
@@ -54,14 +59,17 @@
   margin-bottom: 10px;
   /* Space between message rows */
 }
+
 .message-row.user {
   justify-content: flex-end;
   /* Push user messages to the right */
 }
+
 .message-row.bot {
   justify-content: flex-start;
   /* Push bot messages to the left */
 }
+
 /* Avatars */
 .avatar {
   width: 30px;
@@ -78,18 +86,21 @@
   /* NEW/MODIFIED: Add these font families for emoji support */
   font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Symbol", "EmojiOne Color", "Twemoji Mozilla", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .bot-avatar {
   background-color: #6C757D;
   /* Grey for bot */
   margin-right: 8px;
   /* Space between bot avatar and message */
 }
+
 .user-avatar {
   background-color: #28A745;
   /* Green for user */
   margin-left: 8px;
   /* Space between user avatar and message */
 }
+
 /* Adjust existing message bubble styles for better fit */
 .bot-message,
 .user-message {
@@ -102,18 +113,21 @@
   word-wrap: break-word;
   text-align: left;
 }
+
 .bot-message {
   /* align-self: flex-start;  Removed because message-row handles alignment */
   background-color: #E2E2E2;
   color: #333;
   /* margin-right: auto; Removed */
 }
+
 .user-message {
   /* align-self: flex-end; Removed because message-row handles alignment */
   background-color: #007BFF;
   color: white;
   /* margin-left: auto; Removed */
 }
+
 /* Style for initial loading message */
 .initial-loading {
   font-style: italic;
@@ -125,7 +139,9 @@
   margin: 20px auto;
   max-width: 80%;
 }
-/* Container for initial loading message and spinner */
+
+
+/* Container for initial loading message and spinner */ 
 .initial-loading-container {
   display: flex;
   flex-direction: column; /* Stack spinner and text vertically */
@@ -160,6 +176,9 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
 .chat-input-area {
   padding: 15px 20px;
   background-color: #F0F0F0; /* Light gray background for input area */
@@ -169,7 +188,7 @@
   align-items: center;
   flex-shrink: 0;
 }
-
+/* MODIFIED: Message Input Aesthetics */
 .message-input {
   flex-grow: 1; /* Allows it to take up available space */
   padding: 12px 15px; /* Increased padding for better touch/click area */
@@ -214,6 +233,8 @@
   cursor: not-allowed; /* Indicate it's not clickable */
   opacity: 0.7; /* Slightly dim the disabled button */
 }
+
+
 /* src/components/Chatbot/Chatbot.css  */
 /* Main Chatbot Container */
 .chatbot-container {
@@ -364,6 +385,9 @@
   background-color: #6C757D; /* Grey when disabled */
   cursor: not-allowed;
 }
+
+
+
 /* New wrapper for fixed positioning */
 .chatbot-wrapper {
   position: fixed;
@@ -451,8 +475,9 @@
   transition: color 0.2s ease;
 }
 .chatbot-close-button:hover {
-  /* color: #06090C; Darker on hover */
+  /* color: #06090c; Darker on hover */
     transform: scale(1.1); /* More prominent hover effect */
+
 }
 /* Messages Area */
 .chatbot-messages {
@@ -524,26 +549,3 @@
   background-color: #6C757D;
   cursor: not-allowed;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,10 +8,9 @@ import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
-// import ChatbotComponent from "./componets/Chatbot/ChatbotComponent"
 import DeveloperInfoPopup from "./componets/DeveloperInfo/DeveloperInfoPopup";
 import { useState } from "react";
+import ChatbotComponent from "./componets/Chatbot/ChatbotComponents";
 
 
 
@@ -53,7 +52,7 @@ const App = () =>{
            
 
         </Routes>
-      {/* < ChatbotComponent/>  */}
+      < ChatbotComponent/> 
 
       </div>
 
