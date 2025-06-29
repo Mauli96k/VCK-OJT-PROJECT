@@ -11,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import DeveloperInfoPopup from "./componets/DeveloperInfo/DeveloperInfoPopup";
 import { useState } from "react";
 import ChatbotComponent from "./componets/Chatbot/ChatbotComponents";
+import Footer from "./componets/Footer/Footer";
 
 
 
@@ -54,7 +55,11 @@ const App = () =>{
         </Routes>
       < ChatbotComponent/> 
 
+    
+
       </div>
+
+      <Footer/>
 
       
 

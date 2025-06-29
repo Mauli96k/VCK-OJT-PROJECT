@@ -1,7 +1,7 @@
 // src/pages/CoursesPage.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import CollegeTourVideo from '..images/college-tour.mp4'; // Your imported video
+import CollegeTourVideo from '../assets/images/college-tour.mp4'; // Your imported video
 const CoursesPage = () => {
   return (
     <div className="page-container" style={{overflow:"auto"}}>
@@ -13,7 +13,7 @@ const CoursesPage = () => {
       <h2>Discover Campus Life</h2>
       <div className="video-container">
         <video controls width="100%" height="auto" className="course-video">
-          <source src="/Video/college-tour.mp4" type="video/mp4" />
+          <source src="/assets" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p className="video-caption">
@@ -65,7 +65,7 @@ const CoursesPage = () => {
       </ul>
       {/* New Detailed Courses Table */}
       <h2>Program Details & Fee Structure (Annual)</h2>
-      <table className="admissions-table course-details-table"> 
+      <table className="admissions-table course-details-table"> {/* Reusing admissions-table, adding course-details-table for specific styles */}
         <thead>
           <tr>
             <th>Program Type</th>
@@ -97,7 +97,7 @@ const CoursesPage = () => {
             <td>₹ 95,000</td>
             <td>B.Sc. IT/CS (50%)</td>
           </tr>
-         
+          {/* Add more rows for other programs as needed */}
         </tbody>
       </table>
       <h2>Specialized & Vocational Courses</h2>
